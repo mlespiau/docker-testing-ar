@@ -20,7 +20,7 @@ $ docker ps
 Review port mappings. Need to expose the port in the docker host.
 
 # Demo 2
-Explicar OpenCATS. 
+Explicar OpenCATS.
 
 Explicar que vamos a hacer:
 - Correr un conjunto de contenedores que definen el entorno de testing de OpenCATS + Tools de testing (Selenium)
@@ -43,3 +43,7 @@ Chequear la aplicación.
 $ docker ps
 ```
 Ver tests/runAllTests.sh
+
+```bash
+$ docker exec -it {containerID} /var/www/public/test/runAllTests.sh
+```

@@ -18,3 +18,28 @@ Load http://127.0.0.1:5000/ - PROFIT
 $ docker ps
 ```
 Review port mappings. Need to expose the port in the docker host.
+
+# Demo 2
+Explicar OpenCATS. 
+
+Explicar que vamos a hacer:
+- Correr un conjunto de contenedores que definen el entorno de testing de OpenCATS + Tools de testing (Selenium)
+- Ejecutar tests automaticos
+
+```bash
+$ git clone https://github.com/opencats/OpenCATS.git
+$ cd OpenCATS/docker
+```
+
+Ver docker-compose-test.yml
+
+```bash
+$ docker-compose -f docker-compose-test.yml up
+```
+
+Chequear la aplicación.
+
+```bash
+$ docker ps
+```
+Ver tests/runAllTests.sh
